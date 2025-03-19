@@ -1,2 +1,62 @@
 
 /* Your CSS Code here. */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+}
+
+.player {
+  width: 800px;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #222;
+}
+
+.player__button, .rewind, .forward {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.player__button:hover, .rewind:hover, .forward:hover {
+  color: #1e90ff;
+}
+
+.volume, .playbackSpeed {
+  margin: 0 10px;
+}
+
+.progress {
+  flex: 1;
+  height: 5px;
+  background: gray;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress__filled {
+  width: 0%;
+  height: 100%;
+  background: #1e90ff;
+}
